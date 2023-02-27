@@ -1,0 +1,121 @@
+html{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.notification{
+    display: flex;
+    background-color:  hsl(210, 60%, 98%);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.notification-base{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%);
+    width: 800px;
+    height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.notification-header{
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    justify-items: flex-start;
+    justify-content: space-between;
+}
+
+.notification-header span:first-child {
+    font-size: 30px;
+    margin-right: 15px;
+    font-weight: 900;
+}
+.notification-header span:nth-child(2){
+    padding: 0px 9px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: hsl(224, 21%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+.notification-header-right{
+    font-size: 20px;
+    font-weight: 500;
+}
+.notification-body-item{
+    display: flex;
+    height: 80px;
+    background-color:  hsl(210, 60%, 98%);
+    margin: 10px 40px;
+    border-radius: 10px;
+}
+.notification-body-item-checked{
+    display: flex;
+    height: 80px;
+    margin: 10px 40px;
+    border-radius: 10px;
+}
+
+.notification-body-item img{
+    height: 50px;
+    padding: 10px 10px;
+}
+.notification-body-item-checked img{
+    height: 50px;
+    padding: 10px 10px;
+}
+
+.notification-body-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    position: relative;
+}
+.notification-body-item-extended{
+    display: flex;
+    height: 200px;
+    margin: 10px 40px;
+    border-radius: 10px;
+}
+.notification-body-item-extended img{
+    height: 50px;
+    padding: 20px 10px;
+    
+}
+.notification-body-text{
+    font-size: 16px;
+}
+
+.notification-body-text span:first-child {
+    font-weight: 800;
+    font-size: 18px;
+    color: hsl(224, 21%, 14%);
+}
+.alert::after{
+    content: ' *';
+    color:hsl(1, 90%, 64%);
+}
+.alert p{
+    display: inline-block;
+}
+.notification-body-item-message{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    margin: 15px 0px;
+    border: 0.5px solid hsl(205, 33%, 90%);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 100;
+}
